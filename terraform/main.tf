@@ -1,9 +1,4 @@
-
-resource "aws_key_pair" "deployer" {
-  key_name   = "terraform-key"
-  public_key = file("${pathexpand("~/.ssh/aws-ec2-key.pub")}")
-}
-
+key_name = "terraform-key"
 resource "aws_instance" "web" {
   ami                         = "ami-0f58b397bc5c1f2e8"
   instance_type               = var.instance_type
