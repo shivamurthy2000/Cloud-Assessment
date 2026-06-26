@@ -1,14 +1,19 @@
 # Python
 venv/
+soruce/
 __pycache__/
 *.pyc
 
 # Terraform
-.terraform/
+terraform/.terraform/
+terraform/.terraform.lock.hcl
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
 *.tfstate
 *.tfstate.*
-terraform.tfvars
 
-# OS
+# Environment
+.env
+
+# macOS
 .DS_Store
-Thumbs.db
